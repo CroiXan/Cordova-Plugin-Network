@@ -38,7 +38,7 @@ public class NetworkOperator extends CordovaPlugin {
 		result.put("networkCode", networkCode);
 		result.put("countryCode", countryCode);
 		
-		callbackContext.sendPluginResult(result);
+		callbackContext.success(result);
 	  
 		return true;
     } else {
