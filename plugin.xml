@@ -19,30 +19,28 @@
 -->
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        xmlns:rim="http://www.blackberry.com/ns/widgets"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        id="cordova-plugin-template"
+        id="croixan.plugin.networkoperator"
         version="1.0.0">
-    <name>PluginTemplate</name>
-    <description>a cordova plugin template</description>
+    <name>NetworkOperator</name>
+    <description>cordova plugin for network operator</description>
     <license>Apache 2.0</license>
-    <keywords>cordova,template</keywords>
+    <keywords>cordova,mcc,mnc,telephonymanagaer,networkoperator</keywords>
 
     <engines>
         <engine name="cordova" version=">=3.0.0" />
     </engines>
 
-    <js-module src="www/PluginTemplate.js" name="PluginTemplate">
-        <clobbers target="window.PluginTemplate" />
+    <js-module src="www/NetworkOperator.js" name="NetworkOperator">
+        <clobbers target="window.NetworkOperator" />
     </js-module>
 
     <platform name="android">
-        <source-file src="src/android/plugins/PluginTemplate.java" target-dir="src/plugins/" />
+        <source-file src="src/android/plugins/NetworkOperator.java" target-dir="src/plugins/" />
 
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="PluginTemplate">
-                <param name="android-package" value="plugins.PluginTemplate" />
-                <param name="onload" value="true" />
+            <feature name="NetworkOperator">
+                <param name="android-package" value="plugins.NetworkOperator" />
             </feature>
         </config-file>
     </platform>
