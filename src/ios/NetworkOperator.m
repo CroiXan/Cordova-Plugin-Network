@@ -8,10 +8,7 @@
 
 - (void)getNetworkOperator:(CDVInvokedUrlCommand *)command {
 
-    NSString* words = [command.arguments objectAtIndex:0];
-    NSLog(@"*******js says: %@", words);
-	
-	CTTelephonyNetworkInfo *phoneInfo = [[CTTelephonyNetworkInfo alloc] init];
+    CTTelephonyNetworkInfo *phoneInfo = [[CTTelephonyNetworkInfo alloc] init];
 	CTCarrier *phoneCarrier = [phoneInfo subscriberCellularProvider];
 
 	NSString * carrierName = [phoneCarrier carrierName];
