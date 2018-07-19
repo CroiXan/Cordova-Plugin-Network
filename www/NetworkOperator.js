@@ -1,6 +1,6 @@
 var networkOperator = {
   getNetworkOperator: function (successCallback, errorCallback) {
-    cordova.exec(successCallback, errorCallback, 'networkOperator', 'getNetworkOperator', []);
+    cordova.exec(successCallback, errorCallback, 'NetworkOperator', 'getNetworkOperator', []);
   }
 }
 
