@@ -22,10 +22,10 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="croixan.plugin.networkoperator"
         version="1.0.0">
-    <name>NetworkOperator</name>
-    <description>cordova plugin for network operator</description>
+    <name>PluginNetworkOperator</name>
+    <description>cordova plugin get carrier network operator</description>
     <license>Apache 2.0</license>
-    <keywords>cordova,mcc,mnc,telephonymanagaer,networkoperator</keywords>
+    <keywords>cordova,carrier,mcc,mnc,telephonymanager</keywords>
 
     <engines>
         <engine name="cordova" version=">=3.0.0" />
@@ -45,24 +45,17 @@
         </config-file>
     </platform>
 
-    <!--<platform name="browser">-->
-    <!--<js-module src="src/browser/StatusBarProxy.js" name="StatusBarProxy">-->
-    <!--<runs />-->
-    <!--</js-module>-->
-    <!--</platform>-->
-
-    <!-- ios -->
     <platform name="ios">
 
         <config-file target="config.xml" parent="/*">
-            <feature name="PluginTemplate">
-                <param name="ios-package" value="PluginTemplate" />
-                <param name="onload" value="true" />
+            <feature name="NetworkOperator">
+                <param name="ios-package" value="NetworkOperator" />
             </feature>
         </config-file>
 
-        <header-file src="src/ios/PluginTemplate.h" />
-        <source-file src="src/ios/PluginTemplate.m" />
+        <header-file src="src/ios/NetworkOperator.h" />
+        <source-file src="src/ios/NetworkOperator.m" />
 
+		<framework src="CoreTelephony.framework"/>
     </platform>
 </plugin>
