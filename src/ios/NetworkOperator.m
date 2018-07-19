@@ -18,7 +18,7 @@
 	NSDictionary *operatorInfo = [NSDictionary dictionaryWithObjectsAndKeys:
 		carrierName,@"carrier",
 		mobileNetworkCode,@"networkCode",
-		mobileNetworkCode,@"countryCode",
+		mobileCountryCode,@"countryCode",
 	nil];
 	
     CDVPluginResult *result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:operatorInfo];
