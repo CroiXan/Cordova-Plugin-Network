@@ -1,0 +1,21 @@
+{
+  "name": "PluginNetworkOperators",
+  "version": "1.0.0",
+  "description": "cordova plugin get carrier network operator",
+  "cordova": {
+    "id": "croixan.plugin.networkoperator",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CroiXan/Cordova-Plugin-NetworkOperator"
+  },
+  "keywords": [
+    "cordova","cordova,carrier,mcc,mnc,telephonymanager"
+  ],
+  "author": "Apache Software Foundation",
+  "license": "MIT"
+} 
